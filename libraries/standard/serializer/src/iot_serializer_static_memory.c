@@ -37,7 +37,7 @@
 #include "iot_serializer.h"
 
 /* TinyCBOR include. */
-#include "cbor.h"
+#include <cbor.h>
 
 #ifndef IOT_SERIALIZER_CBOR_ENCODERS
     #define IOT_SERIALIZER_CBOR_ENCODERS    ( 10 )
