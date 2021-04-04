@@ -105,7 +105,9 @@ add_subdirectory( libraries/aws/defender )
 add_subdirectory( libraries/aws/provisioning )
 
 # TinyCBOR library (third-party).
-add_subdirectory( third_party/tinycbor )
+if( ${BUILD_TINYCBOR} )
+    add_subdirectory( third_party/tinycbor )
+endif()
 
 # mbed TLS library (third-party). This is only needed on ports using mbed TLS.
 if( ${MBEDTLS_REQUIRED} )
