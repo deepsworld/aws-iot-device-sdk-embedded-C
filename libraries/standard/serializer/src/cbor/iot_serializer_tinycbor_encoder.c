@@ -29,7 +29,7 @@
  */
 
 #include "iot_serializer.h"
-#include "cbor.h"
+#include <tinycbor/cbor.h>
 
 /* Translate cbor error to serializer error. */
 static void _translateErrorCode( CborError cborError,

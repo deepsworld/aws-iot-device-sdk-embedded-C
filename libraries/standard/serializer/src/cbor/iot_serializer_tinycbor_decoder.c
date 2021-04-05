@@ -29,7 +29,7 @@
  */
 
 #include "iot_serializer.h"
-#include "cbor.h"
+#include <tinycbor/cbor.h>
 
 #define _castDecoderObjectToCborValue( \
         pDecoderObject )    ( ( pDecoderObject )->u.pHandle )
